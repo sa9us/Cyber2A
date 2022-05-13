@@ -2,13 +2,13 @@
 
 ## 1. Goal
 
-The goal of this research is to discover the recent trend of research that is conducted with the help of (or related to) deep learning technology in a research area of arctic science and geoscience. The raw statistics of the trend is retrieved effectively, leveraging Google Scholar search engine and a strategy of refining search domain introduced by our own. 
+The goal of this research is to discover the recent trends of research that is conducted with the help of (or related to) deep learning technology in the research area of arctic science and geoscience. The raw statistics of the trends are retrieved effectively, leveraging Google Scholar search engine and a strategy of refining search domain introduced by our own. 
 
 ## 2. Method
 
 ### 2.1 Identify geoscience related journals
 
-To produce a more accurate statistics of trend and make the whole process more efficient, we introduced a strategy that narrows down the research area by selecting related journals before performing the searches, rather than iterating all the journals or articles in one or more research publication database. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarized the recent adoption of deep learning on earth system science research. Starting from the journals[^1] listed in the reference of the paper, we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
+To produce the more accurate statistics of trends and make the whole process more efficient, we introduced a strategy that narrows down the research area by selecting related journals before performing the searches, rather than iterating all the journals or articles in one or more research publication database. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarized the recent adoption of deep learning on earth system science research. Starting from the journals[^1] listed in the reference of the paper, we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
 
 1.	Find all subcategories in database Scimagojr that cover the journals[^1] referred by the review paper. See the selected subcategories in [Appendix A-1](#apdx1). 
 2.	For each subcategory, find out all journals that have a rank index higher than 1 (SJR > 1). 
@@ -18,7 +18,7 @@ We finally retrieved 232 journals from the above steps. See full list of the jou
 
 ### 2.2 Retrieve and count papers published with and without an Arctic focus
 
-With the API of Google Scholar, and specifying the keyword, journal name, and publication year (see [sample query](#sample_q) below), we counted the number of articles of each selected journals in each year from 2015 to 2021 to build the statistics that present the trend of research on arctic science as  well as geoscience. By specifying the keywords as "deep learning"+"arctic", we retrieved the trend of research on arctic related to deep learning. Since all the selected journals are categorized to be related to geoscience, the trend of research on geoscience can be obtained using keywords "deep learning" alone. 
+With the API of Google Scholar, and specifying the keyword, journal name, and publication year (see [sample query](#sample_q) below), we counted the number of articles of each selected journals in each year from 2015 to 2021 to build the statistics that present the trends of research on arctic science and geoscience. By specifying the keywords as "deep learning"+"arctic", we retrieved the trend of research on arctic related to deep learning. Since all the selected journals are categorized to be related to geoscience, the trend of research on geoscience can be obtained using keywords "deep learning" alone. 
 
 [^1]: we manually selected the journals that are relevant to earth science or geoscience.
 
@@ -57,7 +57,7 @@ To provide a better intuition of the results, we visualized the numbers of the s
 
 <a name="fig1"></a>
 ![trend](images/fig1.png)
-_Figure 1. Trend of deep learning related research in arctic science and geosciences during 2015-2021_  
+_Figure 1. Trends of deep learning related research in arctic science and geosciences during 2015-2021_  
 <br/>
 
 ## 4. Potential issues and uncertainties
