@@ -2,7 +2,7 @@
 
 ## 1. Goal
 
-The goal of this research is to reveal recent trends of publications that uses advanced AI-driven analytics, particularly deep learning technology, to support research in Arctic science and other geoscience domains. We reviewed 232 geoscience journals and use search terms "deep learning" with and without "Arctic" to find relevant articles from 2015-2021. Google scholar API is leveraged for conducting automated search. The results are analyzed and manually check to remove duplications and other uncertainties. 
+The goal of this research is to reveal recent trends of publications that uses advanced **AI-driven analytics**, particularly deep learning technology, to support research in Arctic science and other geoscience domains. We reviewed 232 geoscience journals and use search terms "deep learning" with and without "Arctic" to find relevant articles from 2015-2021. Google scholar API is leveraged for conducting automated search. The results are analyzed and manually check to remove duplications and other uncertainties. 
 
 ## 2. Method
 
