@@ -8,7 +8,7 @@ The goal of this research is to reveal recent trends of publications that uses a
 
 ### 2.1 Identify geoscience related journals
 
-To produce more accurate statistics of the AI-based research trends in Arctic science specifically and geoscience in general, and to reduce the uncessary search in journals that may be less likely to contain AI related technical research, we introduced a strategy to narrow down the research scope (journals) by selecting geoscience journals that may have a technical focus, rather than iterating all the journals or articles in geoscience/environmental science. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarized the recent adoption of deep learning in Earth System Science research. Starting from the journals[^1] listed in the reference of the paper, we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
+To produce more accurate statistics of the AI-based research trends in Arctic science specifically and geoscience in general, and to reduce the uncessary search in journals that may be less likely to contain AI related technical research, we introduced a strategy to narrow down the research scope (journals) by selecting geoscience journals that may have a technical focus, rather than iterating all the journals or articles in geoscience/environmental science domains. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarizes the recent research adopting deep learning in Earth System Science research. Starting from the journals listed in the reference of the paper [^1], we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
 
 1.	Find all subject categories in database Scimagojr that cover the journals[^1] referred by the review paper. Based on this search, we were able to select the following subject categories shown in [Appendix A-1](#apdx1). 
 2.	For each subject category, find out all the journals that have an impact factor higher than 1 (SJR > 1). 
@@ -18,7 +18,7 @@ We finally retrieved 232 journals from the above steps. See a full list of the j
 
 ### 2.2 Retrieve and count papers published with and without an Arctic focus
 
-With the API of Google Scholar, and by specifying the keyword ("deep learning" + "Arctic" or "deep learning"), journal name, and publication year (see [sample query](#sample_q) below), we were able to retrieve the number of articles published in each selected journal from 2015 to 2021. Based on this information, we further produced the statistical chart that present the trends of research in arctic science and the rest of geoscience domains that uses AI and deep learning. 
+With Google Scholar API, and by specifying the keyword ("deep learning" + "Arctic" or "deep learning"), journal name, and publication year (see [sample query](#sample_q) below), we were able to retrieve the number of articles published in each selected journal from 2015 to 2021. Based on this information, we further produced the statistical chart that present the trends of research in Arctic Science and the rest of Geoscience domains that use AI and deep learning. 
 
 [^1]: we manually selected the journals that are relevant to earth science or geoscience.
 
