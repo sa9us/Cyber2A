@@ -2,7 +2,7 @@
 
 ## 1. Goal
 
-The goal of this research is to discover the recent trends of research that is conducted with the help of (or related to) deep learning technology in the research area of arctic science and geoscience. The raw statistics of the trends are retrieved effectively, leveraging Google Scholar search engine and a strategy of refining search domain introduced by our own. 
+The goal of this research is to reveal recent trends of publications that uses deep learning technology for research in Arctic science and other geoscience domains. We reviewed 232 geoscience journals and use search terms "deep learning" with and without "Arctic" to find relevant articles from 2015-2021. Google scholar API is leveraged for conducting automated search. The results are analyzed and manually check to remove duplications and other uncertainties. 
 
 ## 2. Method
 
