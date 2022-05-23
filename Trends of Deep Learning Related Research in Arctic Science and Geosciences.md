@@ -2,23 +2,23 @@
 
 ## 1. Goal
 
-The goal of this research is to reveal recent trends of publications that uses deep learning technology for research in Arctic science and other geoscience domains. We reviewed 232 geoscience journals and use search terms "deep learning" with and without "Arctic" to find relevant articles from 2015-2021. Google scholar API is leveraged for conducting automated search. The results are analyzed and manually check to remove duplications and other uncertainties. 
+The goal of this research is to reveal recent trends of publications that uses advanced AI-driven analytics, particularly deep learning technology, to support research in Arctic science and other geoscience domains. We reviewed 232 geoscience journals and use search terms "deep learning" with and without "Arctic" to find relevant articles from 2015-2021. Google scholar API is leveraged for conducting automated search. The results are analyzed and manually check to remove duplications and other uncertainties. 
 
 ## 2. Method
 
 ### 2.1 Identify geoscience related journals
 
-To produce the more accurate statistics of trends and make the whole process more efficient, we introduced a strategy that narrows down the research area by selecting related journals before performing the searches, rather than iterating all the journals or articles in one or more research publication database. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarized the recent adoption of deep learning on earth system science research. Starting from the journals[^1] listed in the reference of the paper, we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
+To produce more accurate statistics of the AI-based research trends in Arctic science specifically and geoscience in general, and to reduce the uncessary search in journals that may be less likely to contain AI related technical research, we introduced a strategy to narrow down the research scope (journals) by selecting geoscience journals that may have a technical focus, rather than iterating all the journals or articles in geoscience/environmental science. Specifically, we referred to a comprehensive review paper ([Reichstein et al., 2019](#ref1)) that summarized the recent adoption of deep learning in Earth System Science research. Starting from the journals[^1] listed in the reference of the paper, we further expanded the journal list by exploiting a journal ranking database [Scimagojr](https://www.scimagojr.com/journalrank.php), with the following steps:
 
-1.	Find all subcategories in database Scimagojr that cover the journals[^1] referred by the review paper. See the selected subcategories in [Appendix A-1](#apdx1). 
-2.	For each subcategory, find out all journals that have a rank index higher than 1 (SJR > 1). 
-3.	Merge all the collected journals from each subcategory and remove any duplications. 
+1.	Find all subject categories in database Scimagojr that cover the journals[^1] referred by the review paper. Based on this search, we were able to select the following subject categories shown in [Appendix A-1](#apdx1). 
+2.	For each subject category, find out all the journals that have an impact factor higher than 1 (SJR > 1). 
+3.	Merge all the collected journals from each subject category and remove any duplications. 
 
-We finally retrieved 232 journals from the above steps. See full list of the journals in [Appendix A-2](#apdx2).
+We finally retrieved 232 journals from the above steps. See a full list of the journals in [Appendix A-2](#apdx2).
 
 ### 2.2 Retrieve and count papers published with and without an Arctic focus
 
-With the API of Google Scholar, and specifying the keyword, journal name, and publication year (see [sample query](#sample_q) below), we counted the number of articles of each selected journals in each year from 2015 to 2021 to build the statistics that present the trends of research on arctic science and geoscience. By specifying the keywords as "deep learning"+"arctic", we retrieved the trend of research on arctic related to deep learning. Since all the selected journals are categorized to be related to geoscience, the trend of research on geoscience can be obtained using keywords "deep learning" alone. 
+With the API of Google Scholar, and by specifying the keyword ("deep learning" + "Arctic" or "deep learning"), journal name, and publication year (see [sample query](#sample_q) below), we were able to retrieve the number of articles published in each selected journal from 2015 to 2021. Based on this information, we further produced the statistical chart that present the trends of research in arctic science and the rest of geoscience domains that uses AI and deep learning. 
 
 [^1]: we manually selected the journals that are relevant to earth science or geoscience.
 
@@ -37,10 +37,10 @@ https:/scholar.google.com/scholar?as_q=%22deep%20learning%22%20%22arctic%22&as_p
 
 ## 3. Results
 
-The final results are presented in [table 1](#tab1). Using the keyword "deep learning", we obtain the trend of utilizing deep learning in geoscience research, the numbers are in column "**Papers using 'deep learning' in the geoscience domains**". Similarly, we obtain the numbers in column "**Arctic science papers that uses 'deep learning'**" using keywords "deep learning"+"arctic". By calculating the difference between the above two columns, we obtained the number in column "**Other geoscience papers that uses 'deep learning'**". 
+The final results are presented in [table 1](#tab1). Using the keyword "deep learning", we obtain the trend of utilizing deep learning in geoscience research, the numbers are in column "**Papers using 'deep learning' in the geoscience domains**". Similarly, we obtain the numbers in column "**Arctic science papers that use 'deep learning'**" using keywords "deep learning"+"arctic". By calculating the difference between the above two columns, we obtained the number in column "**Other geoscience papers that use 'deep learning'**". We found in the results that the AI and deep learning related papers are highly clustered in some remote sensing related journals. To improve the results accuracy, we manually checked results from these journals to remove duplications and irrelvant results. 
 
 <a name="tab1"></a>
-|    |Papers using "deep learning" in the geoscience domains|Arctic science papers that uses "deep learning"|Other geoscience papers that uses "deep learning"|
+|    |Papers using "deep learning" in the geoscience domains|Arctic science papers that use "deep learning"|Other geoscience papers that use "deep learning"|
 |----|----:|----:|----:|
 |2015|  110|    2|  108|
 |2016|  166|    1|  165|
@@ -50,7 +50,7 @@ The final results are presented in [table 1](#tab1). Using the keyword "deep lea
 |2020| 2722|   81| 2641|
 |2021| 4774|  133| 4641|
 
-_Table 1. Numbers of deep learning related arcticles in arctic science and geosciences during 2015-2021_  
+_Table 1. Numbers of AI and deep learning related arcticles in Arctic Science and Geosciences during 2015-2021_  
 <br/>
 
 To provide a better intuition of the results, we visualized the numbers of the second and the third column together in [figure 1](#fig1).
@@ -62,7 +62,7 @@ _Figure 1. Trends of deep learning related research in arctic science and geosci
 
 ## 4. Potential issues and uncertainties
 
-In this research, although we refined the research area and adopted very specific keywords while performing the search, the search results might  not exactly match our intention. For example, there might be a proportion of result arcticls that simply mention "deep learning" in the text but do not directly use deep learning while conducting the research. Thus, the produced statistics might be a little higher than it should be. However, the trends on arctic science and geoscience are still valid to be compared, supposing they share the similar uncertainty rate. 
+In this research, although we developed several quality-control mechanisms, such as (1) refining the research scope (to focus on more technical journals), (2) adopting very specific keywords while performing the search, and (3) manually checking results from several journals that have a high number of returned publications, the results may still have sone uncertainties and some degree of errors because of the very large volume of total returned results. For example, articles that only mention "deep learning" in the main text (our search does not consider "Reference" section of the paper) but not directly apply "deep learning" may still be considered relevant in our results. Thus, the produced statistics might be a little higher than it should be. However, the trends on arctic science and geoscience are still valid to be compared, supposing they share the similar uncertainty rate. 
 
 ## References
 <a name="ref1"></a>Reichstein, M., Camps-Valls, G., Stevens, B., Jung, M., Denzler, J., & Carvalhais, N. (2019). Deep learning and process understanding for data-driven Earth system science. *Nature, 566(7743)*, 195-204.
