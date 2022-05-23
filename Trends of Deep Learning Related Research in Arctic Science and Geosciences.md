@@ -37,23 +37,7 @@ https:/scholar.google.com/scholar?as_q=%22deep%20learning%22%20%22arctic%22&as_p
 
 ## 3. Results
 
-The final results are presented in [table 1](#tab1). Using the keyword "deep learning", we obtain the trend of utilizing deep learning in geoscience research, the numbers are in column "**Papers using 'deep learning' in the geoscience domains**". Similarly, we obtain the numbers in column "**Arctic science papers that use 'deep learning'**" using keywords "deep learning"+"arctic". By calculating the difference between the above two columns, we obtained the number in column "**Other geoscience papers that use 'deep learning'**". We found in the results that the AI and deep learning related papers are highly clustered in journals that have a remote sensing focus (e.g., Remote Sensing of Environment, IEEE Transactions on Geoscience and Remote Sensing) or a domain foccus (i.e., Journal of Climate, Geophysics, Geophysics Research Letters, Cryosphere). To improve the results accuracy, we manually checked results from these journals to remove duplications and irrelvant results. 
-
-<a name="tab1"></a>
-|    |Papers using "deep learning" in the geoscience domains|Arctic science papers that use "deep learning"|Other geoscience papers that use "deep learning"|
-|----|----:|----:|----:|
-|2015|  110|    2|  108|
-|2016|  166|    1|  165|
-|2017|  400|    9|  391|
-|2018|  912|   10|  902|
-|2019| 1731|   36| 1695|
-|2020| 2722|   81| 2641|
-|2021| 4774|  133| 4641|
-
-_Table 1. Numbers of AI and deep learning related arcticles in Arctic Science and Geosciences during 2015-2021_  
-<br/>
-
-To provide a better intuition of the results, we visualized the numbers of the second and the third column together in [figure 1](#fig1).
+Using the keyword "deep learning", we obtain the trend of utilizing deep learning in geoscience research, the numbers are in column "**Papers using 'deep learning' in the geoscience domains**". Similarly, we obtain the numbers in column "**Arctic science papers that use 'deep learning'**" using keywords "deep learning"+"arctic". By calculating the difference between the above two columns, we obtained the number in column "**Other geoscience papers that use 'deep learning'**". We found in the results that the AI and deep learning related papers are highly clustered in journals that have a remote sensing focus (e.g., Remote Sensing of Environment, IEEE Transactions on Geoscience and Remote Sensing) or a domain foccus (i.e., Journal of Climate, Geophysics, Geophysics Research Letters, Cryosphere). To improve the results accuracy, we manually checked results from these journals to remove duplications and irrelvant results. The final results can be found in [figure 1](#fig1).
 
 <a name="fig1"></a>
 ![trend](images/fig1.png)
